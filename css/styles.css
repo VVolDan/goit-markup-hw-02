@@ -1,73 +1,279 @@
+:root {
+  --text-color: #757575;
+  --second-title-color: #212121;
+  --third-title-color: #212121;
+  --accent-color: #2196f3;
+}
+
 body {
   background-color: #e5e5e5;
-  color: rgba(117, 117, 117, 1);
+  font-family: Roboto, sans-serif;
+  color: var(--text-color);
 }
 
-/* Логотип */
+/* ----------------------General classes------------------------- */
 
-.logo-first {
-  color: #2196f3;
-}
-
-.logo-header {
-  color: #000000;
-}
-
-.logo-footer {
-  color: #ffffff;
-}
-
-/* отмена списков */
-
-.list {
+ul {
   list-style: none;
 }
 
-/* Навигация сайта */
+a {
+  text-decoration: none;
+}
 
-.site-nav .link {
+.title-second {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1, 19;
+  letter-spacing: 0.03em;
   color: #212121;
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
+.pointer {
+  cursor: pointer;
+}
+
+/* --------------------------Header------------------------------- */
+
+header {
+  background-color: #ffffff;
+}
+
+.first-logo {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1, 19;
+  letter-spacing: 0.03em;
   color: #2196f3;
 }
 
-/* адресные данные */
-
-.contact .link {
-  color: rgba(117, 117, 117, 1);
+.second-logo {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1, 19;
+  letter-spacing: 0.03em;
+  color: #000000;
 }
 
-.contact .adress {
-  color: #ffffff;
+.header-item .link {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1, 14;
+  letter-spacing: 0.02em;
+  color: #212121;
 }
 
-.contact .link:hover,
-.contact .link:focus {
-  color: #2196f3;
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
 }
 
-/* Герой  */
+.header-item .studia {
+  color: var(--accent-color);
+}
+
+.header-item .portfolio {
+  color: var(--accent-color);
+}
+
+.contact-list .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1, 14;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
+}
+
+/* ----------------------Hero------------------------- */
 
 .hero {
   background-color: #2f303a;
+}
+
+.title-first {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
   color: #ffffff;
 }
 
-.hero .hero-button {
-  background-color: #2196f3;
+.hero-btn {
+  background-color: var(--accent-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
   color: #ffffff;
 }
 
-/* Секции */
+/* ----------------------Adventages work with us------------------------- */
 
-/* Цвет основного текста color: #757575*/
-/* Цвет заголовков текста color: #212121*/
-/* Цвет лого, героя, текста кнопки белый, хедера #FFFFFF; */
-/* Второй цвет лого #000000 */
-/* Акцент #2196F3 */
-/* background color: #E5E5E5; */
-/* background hero and footer #2F303A; */
-/* бекграунд колор команды #F5F4FA; */
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.adventages .title-third {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+}
+
+.adventages-item .text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* ----------------------What we do?------------------------- */
+
+.doing .title-second {
+  text-align: center;
+}
+
+/* ----------------------Our team------------------------- */
+
+.team .title-second {
+  text-align: center;
+}
+
+.team .title-third {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.team .text {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* ----------------------Footer------------------------- */
+footer {
+  background-color: #2f303a;
+}
+
+.third-logo {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1, 19;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.adress-item .map {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1, 71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.map:hover,
+.map:focus {
+  color: var(--accent-color);
+}
+
+.adress-item .link {
+  font-size: 14px;
+  line-height: 1, 71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
+}
+
+/* ----------------------Portfolio navigation------------------------- */
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.navigation-item .navigation-btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  border: none;
+  background-color: #f5f4fa;
+}
+
+.navigation-btn:hover,
+.navigation-btn:focus {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  border: none;
+  background-color: var(--accent-color);
+}
+
+/* ----------------------Portfolio gallery------------------------- */
+
+.gallery-item .title-second {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
